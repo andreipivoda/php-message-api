@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home4/r95753andr/web-helper.andreipivoda.ro/ci4
+    - /bin/cp -R * $DEPLOYPATH
