@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://web-helper.andreipivoda.ro/';
+    public $baseURL = 'https://andreipivoda.ro/backend/';
 
     /**
      * --------------------------------------------------------------------------
