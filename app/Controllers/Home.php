@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo 'ok a facut pull';
+        echo 'ok a facut pull email+';
     }
 }
