@@ -3,17 +3,23 @@
 namespace App\Controllers;
 
 use CodeIgniter\API\ResponseTrait;
+use CodeIgniter\HTTP\RequestInterface;
 
 class MessageController extends BaseController
 {
     use ResponseTrait;
 
-    public function index()
+    
+
+    public function index($arg)
     {
         $obj = (object) null;
-        $obj->test = "ok";
+        $obj->function = $arg;
+        $obj->message = file_get_contents("php://input");
 
+
+
+        log_message('info', json_encode($obj));
         return $this->respond($obj, 200);
-        log_message('info', 'function ok');
     }
 }
